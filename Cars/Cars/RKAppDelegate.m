@@ -10,11 +10,24 @@
 
 @implementation RKAppDelegate
 
+- (void)dealloc
+{
+    [_window release];
+    [super dealloc];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    RKHomeViewController *hvCtr =[[RKHomeViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKHomeViewController"] bundle:nil];
+    UINavigationController *naviCtr =[[UINavigationController alloc]initWithRootViewController:hvCtr];
+    self.naviController =naviCtr;
+    [hvCtr release];
+    [naviCtr release];
+    
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController =_naviController;
     [self.window makeKeyAndVisible];
     return YES;
 }

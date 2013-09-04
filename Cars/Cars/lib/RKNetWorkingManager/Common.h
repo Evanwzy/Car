@@ -15,13 +15,10 @@
 #import "ASINetworkQueue.h"
 #import "RKNetWorkingManager.h"
 
-static float msgCellHeight =80.0f;
-
 @interface Common : NSObject{
     
 }
 
-+ (NSString *)getKey;
 
 + (void)showNetWorokingAlertWithMessage :(NSString *)msg;
 + (void)showNetWorokingAlertWithMessageWithSucc :(NSString *)msg;

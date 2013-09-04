@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RKModels.h"
 
 @interface RKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *naviController;
 
 @end
