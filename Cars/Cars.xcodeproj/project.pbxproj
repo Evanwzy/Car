@@ -25,6 +25,28 @@
 		50F1E73017D757BA00974BC4 /* RKNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F1E72F17D757BA00974BC4 /* RKNewsViewController.m */; };
 		50F1E73217D757F400974BC4 /* RKNewsViewController_ip5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E73117D757F400974BC4 /* RKNewsViewController_ip5.xib */; };
 		50F1E73417D7580600974BC4 /* RKNewsViewController_ip4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E73317D7580600974BC4 /* RKNewsViewController_ip4.xib */; };
+		50F1E74C17D844A900974BC4 /* 11@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E73D17D844A900974BC4 /* 11@2x.jpg */; };
+		50F1E74D17D844A900974BC4 /* 12@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E73E17D844A900974BC4 /* 12@2x.jpg */; };
+		50F1E74E17D844A900974BC4 /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74017D844A900974BC4 /* 21.jpg */; };
+		50F1E74F17D844A900974BC4 /* 22@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74117D844A900974BC4 /* 22@2x.jpg */; };
+		50F1E75017D844A900974BC4 /* 31@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74317D844A900974BC4 /* 31@2x.jpg */; };
+		50F1E75117D844A900974BC4 /* 32@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74417D844A900974BC4 /* 32@2x.jpg */; };
+		50F1E75217D844A900974BC4 /* 41@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74617D844A900974BC4 /* 41@2x.jpg */; };
+		50F1E75317D844A900974BC4 /* 42@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74717D844A900974BC4 /* 42@2x.jpg */; };
+		50F1E75417D844A900974BC4 /* 51@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74917D844A900974BC4 /* 51@2x.jpg */; };
+		50F1E75517D844A900974BC4 /* 52@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E74A17D844A900974BC4 /* 52@2x.jpg */; };
+		50F1E75817D8452C00974BC4 /* RKNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F1E75717D8452B00974BC4 /* RKNewsListCell.m */; };
+		50F1E75A17D8455E00974BC4 /* RKNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E75917D8455E00974BC4 /* RKNewsListCell.xib */; };
+		50F1E75E17D85EF700974BC4 /* RKNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F1E75C17D85EF600974BC4 /* RKNewsDetailViewController.m */; };
+		50F1E75F17D85EF700974BC4 /* RKNewsDetailViewController_ip5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E75D17D85EF700974BC4 /* RKNewsDetailViewController_ip5.xib */; };
+		50F1E76117D877AD00974BC4 /* RKNewsDetailViewController_ip4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E76017D877AD00974BC4 /* RKNewsDetailViewController_ip4.xib */; };
+		50F1E76417D87AE300974BC4 /* RKInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F1E76317D87AE300974BC4 /* RKInfoViewController.m */; };
+		50F1E76617D87B5800974BC4 /* RKInfoViewController_ip5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E76517D87B5800974BC4 /* RKInfoViewController_ip5.xib */; };
+		50F1E76817D87B6500974BC4 /* RKInfoViewController_ip4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E76717D87B6500974BC4 /* RKInfoViewController_ip4.xib */; };
+		50F1E76C17D87FA900974BC4 /* RKDriveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F1E76A17D87FA900974BC4 /* RKDriveViewController.m */; };
+		50F1E76F17D880D000974BC4 /* RKDriveViewController_ip4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E76E17D880D000974BC4 /* RKDriveViewController_ip4.xib */; };
+		50F1E77117D880E100974BC4 /* RKDriveViewController_ip5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F1E77017D880E100974BC4 /* RKDriveViewController_ip5.xib */; };
+		50F1E77517D883ED00974BC4 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F1E77417D883ED00974BC4 /* NIDropDown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +104,33 @@
 		50F1E72F17D757BA00974BC4 /* RKNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNewsViewController.m; sourceTree = "<group>"; };
 		50F1E73117D757F400974BC4 /* RKNewsViewController_ip5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNewsViewController_ip5.xib; sourceTree = "<group>"; };
 		50F1E73317D7580600974BC4 /* RKNewsViewController_ip4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNewsViewController_ip4.xib; sourceTree = "<group>"; };
+		50F1E73D17D844A900974BC4 /* 11@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "11@2x.jpg"; sourceTree = "<group>"; };
+		50F1E73E17D844A900974BC4 /* 12@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12@2x.jpg"; sourceTree = "<group>"; };
+		50F1E74017D844A900974BC4 /* 21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21.jpg; sourceTree = "<group>"; };
+		50F1E74117D844A900974BC4 /* 22@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "22@2x.jpg"; sourceTree = "<group>"; };
+		50F1E74317D844A900974BC4 /* 31@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "31@2x.jpg"; sourceTree = "<group>"; };
+		50F1E74417D844A900974BC4 /* 32@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "32@2x.jpg"; sourceTree = "<group>"; };
+		50F1E74617D844A900974BC4 /* 41@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "41@2x.jpg"; sourceTree = "<group>"; };
+		50F1E74717D844A900974BC4 /* 42@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "42@2x.jpg"; sourceTree = "<group>"; };
+		50F1E74917D844A900974BC4 /* 51@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "51@2x.jpg"; sourceTree = "<group>"; };
+		50F1E74A17D844A900974BC4 /* 52@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "52@2x.jpg"; sourceTree = "<group>"; };
+		50F1E75617D8452B00974BC4 /* RKNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNewsListCell.h; sourceTree = "<group>"; };
+		50F1E75717D8452B00974BC4 /* RKNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNewsListCell.m; sourceTree = "<group>"; };
+		50F1E75917D8455E00974BC4 /* RKNewsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNewsListCell.xib; sourceTree = "<group>"; };
+		50F1E75B17D85EF600974BC4 /* RKNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNewsDetailViewController.h; sourceTree = "<group>"; };
+		50F1E75C17D85EF600974BC4 /* RKNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNewsDetailViewController.m; sourceTree = "<group>"; };
+		50F1E75D17D85EF700974BC4 /* RKNewsDetailViewController_ip5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNewsDetailViewController_ip5.xib; sourceTree = "<group>"; };
+		50F1E76017D877AD00974BC4 /* RKNewsDetailViewController_ip4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNewsDetailViewController_ip4.xib; sourceTree = "<group>"; };
+		50F1E76217D87AE300974BC4 /* RKInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKInfoViewController.h; sourceTree = "<group>"; };
+		50F1E76317D87AE300974BC4 /* RKInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKInfoViewController.m; sourceTree = "<group>"; };
+		50F1E76517D87B5800974BC4 /* RKInfoViewController_ip5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKInfoViewController_ip5.xib; sourceTree = "<group>"; };
+		50F1E76717D87B6500974BC4 /* RKInfoViewController_ip4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKInfoViewController_ip4.xib; sourceTree = "<group>"; };
+		50F1E76917D87FA900974BC4 /* RKDriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDriveViewController.h; sourceTree = "<group>"; };
+		50F1E76A17D87FA900974BC4 /* RKDriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDriveViewController.m; sourceTree = "<group>"; };
+		50F1E76E17D880D000974BC4 /* RKDriveViewController_ip4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKDriveViewController_ip4.xib; sourceTree = "<group>"; };
+		50F1E77017D880E100974BC4 /* RKDriveViewController_ip5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKDriveViewController_ip5.xib; sourceTree = "<group>"; };
+		50F1E77317D883ED00974BC4 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
+		50F1E77417D883ED00974BC4 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +183,7 @@
 				50F1E52817D616AF00974BC4 /* RKAppDelegate.m */,
 				50F1E53517D616C600974BC4 /* lib */,
 				50F1E51F17D616AF00974BC4 /* Supporting Files */,
+				50F1E73917D844A800974BC4 /* Resources */,
 			);
 			path = Cars;
 			sourceTree = "<group>";
@@ -156,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				50F1E6C017D6CBBF00974BC4 /* RKNetWorkingManager */,
+				50F1E77217D883ED00974BC4 /* DropDown */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -221,6 +272,10 @@
 			children = (
 				50F1E6E917D6CFAE00974BC4 /* HomeController */,
 				50F1E72D17D7579E00974BC4 /* NewsController */,
+				50F1E73517D840A700974BC4 /* CompanyController */,
+				50F1E73617D840A700974BC4 /* DriveController */,
+				50F1E73717D840A700974BC4 /* PeopleController */,
+				50F1E73817D840A800974BC4 /* ShopController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -239,12 +294,145 @@
 		50F1E72D17D7579E00974BC4 /* NewsController */ = {
 			isa = PBXGroup;
 			children = (
+				50F1E75B17D85EF600974BC4 /* RKNewsDetailViewController.h */,
+				50F1E75C17D85EF600974BC4 /* RKNewsDetailViewController.m */,
+				50F1E76017D877AD00974BC4 /* RKNewsDetailViewController_ip4.xib */,
+				50F1E75D17D85EF700974BC4 /* RKNewsDetailViewController_ip5.xib */,
 				50F1E72E17D757BA00974BC4 /* RKNewsViewController.h */,
 				50F1E72F17D757BA00974BC4 /* RKNewsViewController.m */,
 				50F1E73117D757F400974BC4 /* RKNewsViewController_ip5.xib */,
 				50F1E73317D7580600974BC4 /* RKNewsViewController_ip4.xib */,
+				50F1E75617D8452B00974BC4 /* RKNewsListCell.h */,
+				50F1E75717D8452B00974BC4 /* RKNewsListCell.m */,
+				50F1E75917D8455E00974BC4 /* RKNewsListCell.xib */,
 			);
 			path = NewsController;
+			sourceTree = "<group>";
+		};
+		50F1E73517D840A700974BC4 /* CompanyController */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E76217D87AE300974BC4 /* RKInfoViewController.h */,
+				50F1E76317D87AE300974BC4 /* RKInfoViewController.m */,
+				50F1E76517D87B5800974BC4 /* RKInfoViewController_ip5.xib */,
+				50F1E76717D87B6500974BC4 /* RKInfoViewController_ip4.xib */,
+			);
+			path = CompanyController;
+			sourceTree = "<group>";
+		};
+		50F1E73617D840A700974BC4 /* DriveController */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E76917D87FA900974BC4 /* RKDriveViewController.h */,
+				50F1E76A17D87FA900974BC4 /* RKDriveViewController.m */,
+				50F1E76E17D880D000974BC4 /* RKDriveViewController_ip4.xib */,
+				50F1E77017D880E100974BC4 /* RKDriveViewController_ip5.xib */,
+			);
+			path = DriveController;
+			sourceTree = "<group>";
+		};
+		50F1E73717D840A700974BC4 /* PeopleController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PeopleController;
+			sourceTree = "<group>";
+		};
+		50F1E73817D840A800974BC4 /* ShopController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShopController;
+			sourceTree = "<group>";
+		};
+		50F1E73917D844A800974BC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E73A17D844A900974BC4 /* image */,
+				50F1E74B17D844A900974BC4 /* sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50F1E73A17D844A900974BC4 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E73B17D844A900974BC4 /* car */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		50F1E73B17D844A900974BC4 /* car */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E73C17D844A900974BC4 /* 1 */,
+				50F1E73F17D844A900974BC4 /* 2 */,
+				50F1E74217D844A900974BC4 /* 3 */,
+				50F1E74517D844A900974BC4 /* 4 */,
+				50F1E74817D844A900974BC4 /* 5 */,
+			);
+			path = car;
+			sourceTree = "<group>";
+		};
+		50F1E73C17D844A900974BC4 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E73D17D844A900974BC4 /* 11@2x.jpg */,
+				50F1E73E17D844A900974BC4 /* 12@2x.jpg */,
+			);
+			path = 1;
+			sourceTree = "<group>";
+		};
+		50F1E73F17D844A900974BC4 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E74017D844A900974BC4 /* 21.jpg */,
+				50F1E74117D844A900974BC4 /* 22@2x.jpg */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
+		50F1E74217D844A900974BC4 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E74317D844A900974BC4 /* 31@2x.jpg */,
+				50F1E74417D844A900974BC4 /* 32@2x.jpg */,
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
+		50F1E74517D844A900974BC4 /* 4 */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E74617D844A900974BC4 /* 41@2x.jpg */,
+				50F1E74717D844A900974BC4 /* 42@2x.jpg */,
+			);
+			path = 4;
+			sourceTree = "<group>";
+		};
+		50F1E74817D844A900974BC4 /* 5 */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E74917D844A900974BC4 /* 51@2x.jpg */,
+				50F1E74A17D844A900974BC4 /* 52@2x.jpg */,
+			);
+			path = 5;
+			sourceTree = "<group>";
+		};
+		50F1E74B17D844A900974BC4 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		50F1E77217D883ED00974BC4 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				50F1E77317D883ED00974BC4 /* NIDropDown.h */,
+				50F1E77417D883ED00974BC4 /* NIDropDown.m */,
+			);
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +495,23 @@
 				50F1E72B17D7356800974BC4 /* RKHomeViewController_ip5.xib in Resources */,
 				50F1E73217D757F400974BC4 /* RKNewsViewController_ip5.xib in Resources */,
 				50F1E73417D7580600974BC4 /* RKNewsViewController_ip4.xib in Resources */,
+				50F1E74C17D844A900974BC4 /* 11@2x.jpg in Resources */,
+				50F1E74D17D844A900974BC4 /* 12@2x.jpg in Resources */,
+				50F1E74E17D844A900974BC4 /* 21.jpg in Resources */,
+				50F1E74F17D844A900974BC4 /* 22@2x.jpg in Resources */,
+				50F1E75017D844A900974BC4 /* 31@2x.jpg in Resources */,
+				50F1E75117D844A900974BC4 /* 32@2x.jpg in Resources */,
+				50F1E75217D844A900974BC4 /* 41@2x.jpg in Resources */,
+				50F1E75317D844A900974BC4 /* 42@2x.jpg in Resources */,
+				50F1E75417D844A900974BC4 /* 51@2x.jpg in Resources */,
+				50F1E75517D844A900974BC4 /* 52@2x.jpg in Resources */,
+				50F1E75A17D8455E00974BC4 /* RKNewsListCell.xib in Resources */,
+				50F1E75F17D85EF700974BC4 /* RKNewsDetailViewController_ip5.xib in Resources */,
+				50F1E76117D877AD00974BC4 /* RKNewsDetailViewController_ip4.xib in Resources */,
+				50F1E76617D87B5800974BC4 /* RKInfoViewController_ip5.xib in Resources */,
+				50F1E76817D87B6500974BC4 /* RKInfoViewController_ip4.xib in Resources */,
+				50F1E76F17D880D000974BC4 /* RKDriveViewController_ip4.xib in Resources */,
+				50F1E77117D880E100974BC4 /* RKDriveViewController_ip5.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +528,11 @@
 				50F1E71917D722CA00974BC4 /* EvanViewController.m in Sources */,
 				50F1E72C17D7356800974BC4 /* RKHomeViewController.m in Sources */,
 				50F1E73017D757BA00974BC4 /* RKNewsViewController.m in Sources */,
+				50F1E75817D8452C00974BC4 /* RKNewsListCell.m in Sources */,
+				50F1E75E17D85EF700974BC4 /* RKNewsDetailViewController.m in Sources */,
+				50F1E76417D87AE300974BC4 /* RKInfoViewController.m in Sources */,
+				50F1E76C17D87FA900974BC4 /* RKDriveViewController.m in Sources */,
+				50F1E77517D883ED00974BC4 /* NIDropDown.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

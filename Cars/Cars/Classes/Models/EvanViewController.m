@@ -37,7 +37,7 @@
 }
 
 - (void)didReceiveMemoryWarning
-{
+{                   
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -63,18 +63,15 @@
     [self.view addSubview:backBtn];
     
     
-    
 }
 
 #pragma mark - button action
-- (void)backBtnPressed:(id)sender {
-    UIButton *button=sender;
-    if (button.tag !=0) {
+- (void)backBtnPressed:(UIButton *)sender {
+    if (sender.tag !=0) {
         [self.navigationController popToRootViewControllerAnimated:YES];
     } else {
         [self.navigationController popViewControllerAnimated:YES];
     }
-    [button release];
 
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "EvanViewController.h"
+#import "RKModels.h"
  
 @interface RKHomeViewController : EvanViewController {
     UIButton *newsBtn;

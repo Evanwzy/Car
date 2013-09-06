@@ -7,6 +7,8 @@
 //
 
 #import "RKHomeViewController.h"
+#import "RKNewsViewController.h"
+#import "RKInfoViewController.h"
 
 @interface RKHomeViewController ()
 
@@ -58,5 +60,22 @@
 #pragma mark - settingUI
 - (void)setupUI {
     backBtn.hidden =YES;
+    
+    [newsBtn addTarget:self action:@selector(newsBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [companyBtn addTarget:self action:@selector(companyBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
 }
+
+#pragma mark - button action
+- (void)newsBtnPressed:(id)sender {
+    RKNewsViewController *nvCtr =[[RKNewsViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKNewsViewController"] bundle:nil];
+    [self.navigationController pushViewController:nvCtr animated:YES];
+    [nvCtr release];
+}
+
+- (void)companyBtnPressed:(id)sender {
+    RKInfoViewController *ivCtr =[[RKInfoViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKInfoViewController"] bundle:nil];
+    [self.navigationController pushViewController:ivCtr animated:YES];
+    [ivCtr release];
+}
+
 @end
