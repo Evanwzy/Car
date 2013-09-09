@@ -43,6 +43,7 @@
     [sirBtn release];
     [yearBtn release];
     [dateBtn release];
+    [_commitBtn release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -50,11 +51,16 @@
     [self setSirBtn:nil];
     [self setYearBtn:nil];
     [self setDateBtn:nil];
+    [self setCommitBtn:nil];
     [super viewDidUnload];
 }
 
 #pragma mark - settingUI
 - (void)setupUI {
+    titleLbl.text =@"预约试驾";
+    
+    [self.view sendSubviewToBack:bgImageView];
+    
     [carBtn addTarget:self action:@selector(carBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [sirBtn addTarget:self action:@selector(sirBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [yearBtn addTarget:self action:@selector(yearBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -66,8 +72,8 @@
     NSArray * arr = [[NSArray alloc] initWithObjects:@"法拉利458 Italia", @"兰博基尼",  nil];
     if(dropDown == nil) {
         carBtn.selected =YES;
-        CGFloat f = 120;
-        dropDown = [[NIDropDown alloc]showDropDown:sender :200*[arr count] :arr];
+//        CGFloat f = 120;
+        dropDown = [[NIDropDown alloc]showDropDown:sender :20*[arr count] :arr];
         dropDown.delegate = self;
     }
     else {
@@ -76,7 +82,7 @@
     }
     
     if(dropDown2 != nil) {
-        [dropDown hideDropDown:sirBtn];
+        [dropDown2 hideDropDown:sirBtn];
         [self relBtn:sirBtn];
     }
     if(dropDown3 != nil) {
@@ -84,7 +90,7 @@
         [self relBtn:yearBtn];
     }
     if(dropDown4 != nil) {
-        [dropDown3 hideDropDown:dateBtn];
+        [dropDown4 hideDropDown:dateBtn];
         [self relBtn:dateBtn];
     }
 }
@@ -93,8 +99,8 @@
     NSArray * arr = [[NSArray alloc] initWithObjects:@"先生", @"小姐",  @"夫人", @"爵士", @"博士", @"女士", @"教授", nil];
     if(dropDown2 == nil) {
         sirBtn.selected =YES;
-        CGFloat f = 120;
-        dropDown2 = [[NIDropDown alloc]showDropDown:sender :200*[arr count] :arr];
+//        CGFloat f = 120;
+        dropDown2 = [[NIDropDown alloc]showDropDown:sender :20*[arr count] :arr];
         dropDown2.delegate = self;
     }
     else {
@@ -111,7 +117,7 @@
         [self relBtn:yearBtn];
     }
     if(dropDown4 != nil) {
-        [dropDown3 hideDropDown:dateBtn];
+        [dropDown4 hideDropDown:dateBtn];
         [self relBtn:dateBtn];
     }
 }
@@ -120,8 +126,8 @@
     NSArray * arr = [[NSArray alloc] initWithObjects:@"2年以下", @"2-5年",@"5年以上",  nil];
     if(dropDown3 == nil) {
         yearBtn.selected =YES;
-        CGFloat f = 120;
-        dropDown3 = [[NIDropDown alloc]showDropDown:sender :200*[arr count] :arr];
+//        CGFloat f = 120;
+        dropDown3 = [[NIDropDown alloc]showDropDown:sender :20*[arr count] :arr];
         dropDown3.delegate = self;
     }
     else {
@@ -138,7 +144,7 @@
         [self relBtn:sirBtn ];
     }
     if(dropDown4 != nil) {
-        [dropDown3 hideDropDown:dateBtn];
+        [dropDown4 hideDropDown:dateBtn];
         [self relBtn:dateBtn];
     }
 }
@@ -147,7 +153,7 @@
     NSArray * arr = [[NSArray alloc] initWithObjects:@"3天以内", @"一周以内", @"两周以内", nil];
     if(dropDown4 == nil) {
         dateBtn.selected =YES;
-        CGFloat f = 120;
+//        CGFloat f = 120;
         dropDown4 = [[NIDropDown alloc]showDropDown:sender :20*[arr count] :arr];
         dropDown4.delegate = self;
     }
@@ -156,16 +162,16 @@
         [self relBtn:sender];
     }
     
-    if(dropDown2 != nil) {
-        [dropDown hideDropDown:sirBtn];
+    if(dropDown != nil) {
+        [dropDown hideDropDown:carBtn];
         [self relBtn:sirBtn];
+    }
+    if(dropDown2 != nil) {
+        [dropDown2 hideDropDown:sirBtn];
+        [self relBtn:yearBtn];
     }
     if(dropDown3 != nil) {
         [dropDown3 hideDropDown:yearBtn];
-        [self relBtn:yearBtn];
-    }
-    if(dropDown4 != nil) {
-        [dropDown3 hideDropDown:dateBtn];
         [self relBtn:dateBtn];
     }
 }
@@ -198,7 +204,7 @@
     }else if([sender isEqual:dropDown3]) {
         yearBtn.selected =NO;
         dropDown3 = nil;
-    }else if([sender isEqual:dropDown3]) {
+    }else if([sender isEqual:dropDown4]) {
         dateBtn.selected =NO;
         dropDown4 = nil;
     }

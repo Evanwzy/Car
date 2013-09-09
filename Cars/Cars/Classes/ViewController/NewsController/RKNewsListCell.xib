@@ -32,28 +32,30 @@
 				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUIView" id="220693691">
+			<object class="IBUIView" id="26279588">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="28644247">
-						<reference key="NSNextResponder" ref="220693691"/>
+					<object class="IBUIImageView" id="343401572">
+						<reference key="NSNextResponder" ref="26279588"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{10, 10}, {80, 80}}</string>
-						<reference key="NSSuperview" ref="220693691"/>
-						<reference key="NSNextKeyView" ref="922763198"/>
+						<reference key="NSSuperview" ref="26279588"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="83022360"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBUITextView" id="922763198">
-						<reference key="NSNextResponder" ref="220693691"/>
+					<object class="IBUITextView" id="83022360">
+						<reference key="NSNextResponder" ref="26279588"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{98, 0}, {222, 100}}</string>
-						<reference key="NSSuperview" ref="220693691"/>
+						<reference key="NSSuperview" ref="26279588"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor" id="702242888">
+						<object class="NSColor" key="IBUIBackgroundColor" id="1041302590">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
 						</object>
@@ -66,6 +68,10 @@
 						<bool key="IBUIShowsVerticalScrollIndicator">NO</bool>
 						<bool key="IBUIEditable">NO</bool>
 						<string key="IBUIText"/>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
+						</object>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
 							<int key="IBUIAutocapitalizationType">2</int>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -83,9 +89,10 @@
 				</array>
 				<string key="NSFrameSize">{320, 100}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView" ref="28644247"/>
+				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView" ref="343401572"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<reference key="IBUIBackgroundColor" ref="702242888"/>
+				<reference key="IBUIBackgroundColor" ref="1041302590"/>
 				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
 					<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
 					<string key="IBUIDisplayName">Freeform</string>
@@ -98,16 +105,16 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">msgImgView</string>
-						<reference key="source" ref="220693691"/>
-						<reference key="destination" ref="28644247"/>
+						<reference key="source" ref="26279588"/>
+						<reference key="destination" ref="343401572"/>
 					</object>
 					<int key="connectionID">6</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">msgText</string>
-						<reference key="source" ref="220693691"/>
-						<reference key="destination" ref="922763198"/>
+						<reference key="source" ref="26279588"/>
+						<reference key="destination" ref="83022360"/>
 					</object>
 					<int key="connectionID">7</int>
 				</object>
@@ -133,22 +140,22 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2</int>
-						<reference key="object" ref="220693691"/>
+						<reference key="object" ref="26279588"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="28644247"/>
-							<reference ref="922763198"/>
+							<reference ref="343401572"/>
+							<reference ref="83022360"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">3</int>
-						<reference key="object" ref="28644247"/>
-						<reference key="parent" ref="220693691"/>
+						<reference key="object" ref="343401572"/>
+						<reference key="parent" ref="26279588"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="922763198"/>
-						<reference key="parent" ref="220693691"/>
+						<reference key="object" ref="83022360"/>
+						<reference key="parent" ref="26279588"/>
 					</object>
 				</array>
 			</object>
@@ -167,7 +174,32 @@
 			<nil key="sourceID"/>
 			<int key="maxID">7</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">RKNewsListCell</string>
+					<string key="superclassName">UITableViewCell</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="msgImgView">UIImageView</string>
+						<string key="msgText">UITextView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="msgImgView">
+							<string key="name">msgImgView</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="msgText">
+							<string key="name">msgText</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/RKNewsListCell.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>

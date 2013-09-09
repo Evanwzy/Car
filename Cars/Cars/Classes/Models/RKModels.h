@@ -14,4 +14,8 @@
 
 + (NSString *)fullNameOfNibWithFileName:(NSString *)fileName;
 
++ (void)saveKey:(NSString *)keyStr;
+
++ (NSString *)pathForImageWithFileName:(NSString *)fileName;
+
 @end

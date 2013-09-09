@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.view sendSubviewToBack:bgImageView];
     
     NSArray *newsArray =[NSArray arrayWithObjects:
                    @"据悉，现代全新一代劳恩斯目前内部代号为RK，新车在外观方面或将借鉴之前发布的HCD-14概念车的设计元素，整车前脸造型将更加前卫，此外轿跑风格的尾部设计是新车的另一大亮点。\n动力方面，据最新消息，现代全新一代劳恩斯或将搭载的是2.0升涡轮增压发动机和3.3升V6自然吸气发动机。传动方面，与之匹配的是或是一台8速手自一体变速箱。",
@@ -101,7 +102,11 @@
     [image1 release];
     [image2 release];
     
-    [self.newsSV setContentSize:CGSizeMake(320.0f, 420.0f+sizeFrame.height*3/2)];
+    if (IS_IPHONE_5) {
+        [self.newsSV setContentSize:CGSizeMake(320.0f, 420.0f+sizeFrame.height*5/4)];
+    } else {
+        [self.newsSV setContentSize:CGSizeMake(320.0f, 420.0f+sizeFrame.height*3/2)];
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -38,6 +38,10 @@
                         AndDataUrl:(NSArray *)fileArray
                            DataKey:(NSArray *)dataKeyArray;
 
+- (void)asiFormDataRequestWithUrlStr:(NSString *)urlStr
+                        AndPostValue:(NSArray *)valueArray
+                             PostKey:(NSArray *)postKeyArray;
+
 //ASIHttpRequest
 - (void)asiHttpRequestWithUrlStr:(NSString *)urlStr
                         AndPostValue:(NSArray *)valueArray

@@ -14,7 +14,7 @@
     IBOutlet UIButton *sirBtn;
     IBOutlet UIButton *yearBtn;
     IBOutlet UIButton *dateBtn;
-    
+    IBOutlet UIButton *commitBtn;
     
     NIDropDown *dropDown;
     NIDropDown *dropDown2;
@@ -26,4 +26,7 @@
 @property (retain, nonatomic) IBOutlet UIButton *sirBtn;
 @property (retain, nonatomic) IBOutlet UIButton *yearBtn;
 @property (retain, nonatomic) IBOutlet UIButton *dateBtn;
+
+@property (retain, nonatomic) IBOutlet UIButton *commitBtn;
+
 @end

@@ -41,6 +41,9 @@
 #pragma mark - settingUI
 - (void)setupUI {
     backBtn.hidden =NO;
+    titleLbl.text =@"新闻动态";
+    
+    [self.view bringSubviewToFront:_tableView];
     
     _tableView.backgroundColor =[UIColor clearColor];
     _tableView.delegate =self;

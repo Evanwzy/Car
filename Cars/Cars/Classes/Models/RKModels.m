@@ -18,4 +18,23 @@
     }
 }
 
++ (void)saveKey:(NSString *)keyStr {
+    [[NSUserDefaults standardUserDefaults] setValue:keyStr forKey:@"user_key"];
+}
+
++ (NSString *)getKey {
+    NSString *str =[[NSUserDefaults standardUserDefaults] objectForKey:@"user_key"];
+    return str;
+}
+
++ (NSString *)pathForImageWithFileName:(NSString *)fileName {
+    NSString *pathStr;
+    if (IS_IPHONE_5) {
+        pathStr =[NSString stringWithFormat:@"%@_ip5.png", fileName];
+    } else {
+        pathStr =[NSString stringWithFormat:@"%@_ip4.png", fileName];
+    }
+    return pathStr;
+}
+
 @end
