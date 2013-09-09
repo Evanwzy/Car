@@ -7,9 +7,10 @@
 //
 
 #import "EvanViewController.h"
+#import "Common.h"
 
-@interface RKShopViewController : EvanViewController
+@interface RKShopViewController : EvanViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
-
+@property (retain, nonatomic) NSArray *imgArray;
 @end

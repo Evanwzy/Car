@@ -14,7 +14,7 @@
 
 @implementation RKDriveViewController
 
-@synthesize carBtn, sirBtn, yearBtn, dateBtn;
+@synthesize carBtn, sirBtn, yearBtn, dateBtn, commitBtn, familyNameText, nameText, mailText, cellphoneText, cardText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +29,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    keyBoardController=[[UIKeyboardViewController alloc] initWithControllerDelegate:self];
+    
+    [keyBoardController addToolbarToKeyboard];
     [self setupUI];
 }
 
@@ -39,11 +46,17 @@
 }
 
 - (void)dealloc {
+    [keyBoardController release];
     [carBtn release];
     [sirBtn release];
     [yearBtn release];
     [dateBtn release];
-    [_commitBtn release];
+    [commitBtn release];
+    [nameText release];
+    [familyNameText release];
+    [cellphoneText release];
+    [mailText release];
+    [cardText release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -52,6 +65,11 @@
     [self setYearBtn:nil];
     [self setDateBtn:nil];
     [self setCommitBtn:nil];
+    [self setNameText:nil];
+    [self setFamilyNameText:nil];
+    [self setCellphoneText:nil];
+    [self setMailText:nil];
+    [self setCardText:nil];
     [super viewDidUnload];
 }
 
@@ -65,6 +83,7 @@
     [sirBtn addTarget:self action:@selector(sirBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [yearBtn addTarget:self action:@selector(yearBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [dateBtn addTarget:self action:@selector(dateBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [commitBtn addTarget:self action:@selector(commitBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark -button action
@@ -164,15 +183,28 @@
     
     if(dropDown != nil) {
         [dropDown hideDropDown:carBtn];
-        [self relBtn:sirBtn];
+        [self relBtn:carBtn];
     }
     if(dropDown2 != nil) {
         [dropDown2 hideDropDown:sirBtn];
-        [self relBtn:yearBtn];
+        [self relBtn:sirBtn];
     }
     if(dropDown3 != nil) {
         [dropDown3 hideDropDown:yearBtn];
-        [self relBtn:dateBtn];
+        [self relBtn:yearBtn];
+    }
+}
+
+- (void)commitBtnPressed:(UIButton *)sender {
+    if (familyNameText.text.length !=0 &&nameText.text.length !=0 &&mailText.text.length !=0 &&cellphoneText.text.length !=0 &&cardText.text.length !=0) {
+        [Common showNetWorokingAlertWithMessageWithSucc:@"提交成功"];
+        familyNameText.text =@"";
+        nameText.text =@"";
+        mailText.text =@"";
+        cellphoneText.text =@"";
+        cardText.text =@"";
+    } else {
+        [Common showNetWorokingAlertWithMessage:@"请填写完整信息"];
     }
 }
 
@@ -225,6 +257,20 @@
         dateBtn.selected =NO;
         dropDown4 = nil;
     }
+    
+}
+
+#pragma mark - UIKeyboardViewController delegate methods
+
+
+
+- (void)alttextFieldDidEndEditing:(UITextField *)textField {
+    
+    
+}
+
+-(void)alttextFieldDidBeginEditing:(UITextField *)textField {
+    
     
 }
 @end

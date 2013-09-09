@@ -15,7 +15,7 @@
 
 @implementation RKPeopleViewController
 
-@synthesize loginBtn, registerBtn;
+@synthesize loginBtn, registerBtn, keyBoardController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
     [self setupUI];
 }
 
@@ -38,7 +39,6 @@
     keyBoardController=[[UIKeyboardViewController alloc] initWithControllerDelegate:self];
     
     [keyBoardController addToolbarToKeyboard];
-    
 }
 
 
@@ -57,6 +57,7 @@
     [super dealloc];
 }
 - (void)viewDidUnload {
+    [self setKeyBoardController:nil];
     [self setLoginBtn:nil];
     [self setRegisterBtn:nil];
     [self setAccountText:nil];
@@ -74,17 +75,17 @@
 }
 
 #pragma mark - button action
+
+
 - (void)registerBtnPressed:(id)sender {
     RKRegisterViewController *rvCtr =[[RKRegisterViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKRegisterViewController"] bundle:nil];
-    [self.navigationController pushViewController:rvCtr animated:YES];
-    [rvCtr release];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PUSHCONTROLLER" object:rvCtr];
 }
 
 - (void)loginBtnPressed:(id)sender {
     if (_accountText.text.length !=0 && _pwdText.text.length !=0) {
         NSArray *postArr =@[_accountText.text, _pwdText.text];
         NSArray *postKeyArr =@[@"account", @"password"];
-        
         [manager asiFormDataRequestWithUrlStr:LoginUrl AndPostValue:postArr PostKey:postKeyArr];
     } else {
         [Common showNetWorokingAlertWithMessage:@"请填写完整信息"];
@@ -92,6 +93,7 @@
 }
 
 -(void)requestSuccWithData:(NSDictionary *)data {
+    [[NSUserDefaults standardUserDefaults]setValue:@"1" forKey:@"IsLogined"];
     NSString *userKey =[data objectForKey:@"user_key"];
     [RKModels saveKey:userKey];
     [Common cancelAllRequestOfAllQueue];
@@ -104,11 +106,11 @@
 
 #pragma mark - UIKeyboardViewController delegate methods
 
-
-
 - (void)alttextFieldDidEndEditing:(UITextField *)textField {
 }
 
 -(void)alttextFieldDidBeginEditing:(UITextField *)textField {
+}
+- (IBAction)backBtn:(id)sender {
 }
 @end

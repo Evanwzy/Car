@@ -86,7 +86,7 @@
     [newsBtn addTarget:self action:@selector(newsBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [companyBtn addTarget:self action:@selector(companyBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [driveBtn addTarget:self action:@selector(driveBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [shopBtn addTarget:self action:@selector(driveBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [shopBtn addTarget:self action:@selector(shopBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [peopleBtn addTarget:self action:@selector(peopleBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     
@@ -127,33 +127,40 @@
 
 #pragma mark - button action
 - (void)newsBtnPressed:(id)sender {
-    RKNewsViewController *nvCtr =[[RKNewsViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKNewsViewController"] bundle:nil];
+    RKNewsViewController *nvCtr =[[[RKNewsViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKNewsViewController"] bundle:nil] autorelease];
     [self.navigationController pushViewController:nvCtr animated:YES];
-    [nvCtr release];
 }
 
 - (void)companyBtnPressed:(id)sender {
-    RKInfoViewController *ivCtr =[[RKInfoViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKInfoViewController"] bundle:nil];
+    RKInfoViewController *ivCtr =[[[RKInfoViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKInfoViewController"] bundle:nil] autorelease];
     [self.navigationController pushViewController:ivCtr animated:YES];
-    [ivCtr release];
 }
 
 - (void)driveBtnPressed:(id)sender {
-    RKDriveViewController *dvCtr =[[RKDriveViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKDriveViewController"] bundle:nil];
+    RKDriveViewController *dvCtr =[[[RKDriveViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKDriveViewController"] bundle:nil] autorelease];
     [self.navigationController pushViewController:dvCtr animated:YES];
-    [dvCtr release];
 }
 
 - (void)shopBtnPressed:(id)sender {
-    RKShopViewController *dvCtr =[[RKShopViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKShopViewController"] bundle:nil];
-    [self.navigationController pushViewController:dvCtr animated:YES];
-    [dvCtr release];
+    RKShopViewController *svCtr =[[[RKShopViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKShopViewController"] bundle:nil] autorelease];
+    [self.navigationController pushViewController:svCtr animated:YES];
 }
 
 - (void)peopleBtnPressed:(id)sender {
-    RKPeopleViewController *pvCtr =[[RKPeopleViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKPeopleViewController"] bundle:nil];
-    [self.navigationController pushViewController:pvCtr animated:YES];
-    [pvCtr release];
+    
+    if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"IsLogined"] isEqualToString:@"1"]) {
+        UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"您已登录" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"注销", nil];
+        [alert show];
+    }else {
+        RKPeopleViewController *pvCtr =[[[RKPeopleViewController alloc]initWithNibName:[RKModels fullNameOfNibWithFileName:@"RKPeopleViewController"] bundle:nil] autorelease];
+        [self.navigationController pushViewController:pvCtr animated:YES];
+    }
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex ==1) {
+        [[NSUserDefaults standardUserDefaults] setValue:@"0" forKey:@"IsLogined"];
+    }
 }
 
 

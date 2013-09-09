@@ -107,11 +107,11 @@
 - (void)backBtnPressed:(UIButton *)sender {
     [Common cancelAllRequestOfAllQueue];
     if (sender.tag !=0) {
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"POPTOROOTCONTROLLER" object:nil];
+        
     } else {
-        [self.navigationController popViewControllerAnimated:YES];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"POPCONTROLLER" object:nil];
     }
-
 }
 
 @end

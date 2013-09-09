@@ -18,7 +18,7 @@ typedef enum{
 #import "RKModels.h"
 #import "SMRotaryWheel.h"
  
-@interface RKHomeViewController : EvanViewController<SMRotaryProtocol> {
+@interface RKHomeViewController : EvanViewController<SMRotaryProtocol, UIAlertViewDelegate> {
     UIButton *newsBtn;
     UIButton *companyBtn;
     UIButton *driveBtn;

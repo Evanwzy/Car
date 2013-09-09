@@ -8,8 +8,9 @@
 
 #import "EvanViewController.h"
 #import "UIKeyboardViewController.h"
-#import "Common.h"
+#import "RKModels.h"
 #import "Constents.h"
+#import <time.h>
 
 @interface RKRegisterViewController : EvanViewController <UIKeyboardViewControllerDelegate, UITextFieldDelegate> {
     UITextField *accountText;
@@ -21,7 +22,20 @@
     UIButton *verifyBtn;
     
     UIKeyboardViewController *keyBoardController;
+    
+    NSString *account;
+    NSString *password;
+    
 }
+
+@property int waitCount;
+@property int type;
+@property (retain , nonatomic) NSTimer *timer;
+
+@property (retain, nonatomic) UIKeyboardViewController *keyBoardController;
+
+@property (retain, nonatomic) NSString *account;
+@property (retain, nonatomic) NSString *password;
 
 @property (retain, nonatomic) IBOutlet UITextField *accountText;
 @property (retain, nonatomic) IBOutlet UITextField *pwdText;

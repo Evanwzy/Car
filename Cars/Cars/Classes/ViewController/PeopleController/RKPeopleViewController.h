@@ -22,4 +22,6 @@
 
 @property (retain, nonatomic) IBOutlet UITextField *accountText;
 @property (retain, nonatomic) IBOutlet UITextField *pwdText;
+
+@property (retain, nonatomic) UIKeyboardViewController *keyBoardController;
 @end
