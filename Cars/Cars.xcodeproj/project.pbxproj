@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50A4B6D017DEE9380031385B /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A4B6CF17DEE9380031385B /* icon114.png */; };
+		50A4B6D217DEE93D0031385B /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A4B6D117DEE93D0031385B /* icon57.png */; };
 		50ED36DA17DD5EF200E24BB9 /* gold_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ED36D917DD5EF200E24BB9 /* gold_line@2x.png */; };
 		50ED36E117DD843D00E24BB9 /* btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ED36DC17DD843D00E24BB9 /* btn_bg@2x.png */; };
 		50ED36E217DD843D00E24BB9 /* login_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ED36DD17DD843D00E24BB9 /* login_logo@2x.png */; };
@@ -27,7 +29,6 @@
 		50ED370817DDBD4800E24BB9 /* shop02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ED370517DDBD4800E24BB9 /* shop02@2x.png */; };
 		50ED370917DDBD4800E24BB9 /* shop03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ED370617DDBD4800E24BB9 /* shop03@2x.png */; };
 		50ED370B17DDBDB300E24BB9 /* RKShopDetailViewController_ip4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50ED370A17DDBDB300E24BB9 /* RKShopDetailViewController_ip4.xib */; };
-		50ED370D17DDC3F100E24BB9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ED370C17DDC3F100E24BB9 /* icon@2x.png */; };
 		50F1E51917D616AF00974BC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F1E51817D616AF00974BC4 /* UIKit.framework */; };
 		50F1E51B17D616AF00974BC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F1E51A17D616AF00974BC4 /* Foundation.framework */; };
 		50F1E51D17D616AF00974BC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F1E51C17D616AF00974BC4 /* CoreGraphics.framework */; };
@@ -133,6 +134,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50A4B6CF17DEE9380031385B /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		50A4B6D117DEE93D0031385B /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		50ED36D917DD5EF200E24BB9 /* gold_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold_line@2x.png"; sourceTree = "<group>"; };
 		50ED36DC17DD843D00E24BB9 /* btn_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_bg@2x.png"; sourceTree = "<group>"; };
 		50ED36DD17DD843D00E24BB9 /* login_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_logo@2x.png"; sourceTree = "<group>"; };
@@ -155,7 +158,6 @@
 		50ED370517DDBD4800E24BB9 /* shop02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop02@2x.png"; sourceTree = "<group>"; };
 		50ED370617DDBD4800E24BB9 /* shop03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop03@2x.png"; sourceTree = "<group>"; };
 		50ED370A17DDBDB300E24BB9 /* RKShopDetailViewController_ip4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKShopDetailViewController_ip4.xib; sourceTree = "<group>"; };
-		50ED370C17DDC3F100E24BB9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		50F1E51517D616AF00974BC4 /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F1E51817D616AF00974BC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50F1E51A17D616AF00974BC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -367,7 +369,8 @@
 		50F1E50C17D616AF00974BC4 = {
 			isa = PBXGroup;
 			children = (
-				50ED370C17DDC3F100E24BB9 /* icon@2x.png */,
+				50A4B6D117DEE93D0031385B /* icon57.png */,
+				50A4B6CF17DEE9380031385B /* icon114.png */,
 				50F1E51E17D616AF00974BC4 /* Cars */,
 				50F1E51717D616AF00974BC4 /* Frameworks */,
 				50F1E51617D616AF00974BC4 /* Products */,
@@ -947,7 +950,8 @@
 				50ED370817DDBD4800E24BB9 /* shop02@2x.png in Resources */,
 				50ED370917DDBD4800E24BB9 /* shop03@2x.png in Resources */,
 				50ED370B17DDBDB300E24BB9 /* RKShopDetailViewController_ip4.xib in Resources */,
-				50ED370D17DDC3F100E24BB9 /* icon@2x.png in Resources */,
+				50A4B6D017DEE9380031385B /* icon114.png in Resources */,
+				50A4B6D217DEE93D0031385B /* icon57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1027,6 +1031,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1042,6 +1047,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1058,6 +1064,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1066,6 +1073,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

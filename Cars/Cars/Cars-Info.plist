@@ -14,12 +14,13 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>icon@2x.png</string>
+				<string>icon114.png</string>
+				<string>icon57.png</string>
 			</array>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.rikee.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.rikee.godCar</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
