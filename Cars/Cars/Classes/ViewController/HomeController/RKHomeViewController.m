@@ -21,7 +21,7 @@
 
 @implementation RKHomeViewController
 
-@synthesize newsBtn, companyBtn, driveBtn, shopBtn, peopleBtn, infoImageView;
+@synthesize newsBtn, companyBtn, driveBtn, shopBtn, peopleBtn, infoImageView, infoText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -52,7 +52,7 @@
     [shopBtn release];
     [peopleBtn release];
     [infoImageView release];
-    [_infoLbl release];
+    [infoText release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -62,7 +62,7 @@
     [self setShopBtn:nil];
     [self setPeopleBtn:nil];
     [self setInfoImageView:nil];
-    [self setInfoLbl:nil];
+    [self setInfoText:nil];
     [super viewDidUnload];
 }
 
@@ -74,8 +74,7 @@
     [self.view addSubview:self.flashView];
     [self.flashView setAlpha:0];
     
-    self.infoLbl.backgroundColor =[UIColor colorWithPatternImage:[UIImage imageNamed:@"alpha_bg.png"]];
-    self.infoLbl.text =@"";
+    infoText.text =@"车神集团的最新动态";
     
     backBtn.hidden =YES;
     topBg.hidden =YES;
@@ -175,6 +174,7 @@
             shopBtn.hidden =YES;
             peopleBtn.hidden =YES;
             infoImageView.image =[UIImage imageNamed:[RKModels pathForImageWithFileName:@"news"]];
+            infoText.text =@"车神集团动态及行业资讯";
             break;
         case companyType:
             newsBtn.hidden =YES;
@@ -183,6 +183,7 @@
             shopBtn.hidden =YES;
             peopleBtn.hidden =YES;
             infoImageView.image =[UIImage imageNamed:[RKModels pathForImageWithFileName:@"company"]];
+            infoText.text =@"中国最大的汽车综合服务运营商";
             break;
         case driveType:
             newsBtn.hidden =YES;
@@ -191,6 +192,7 @@
             shopBtn.hidden =YES;
             peopleBtn.hidden =YES;
             infoImageView.image =[UIImage imageNamed:[RKModels pathForImageWithFileName:@"drive"]];
+            infoText.text =@"车神超跑在线试驾预约";
             break;
         case shopType:
             newsBtn.hidden =YES;
@@ -199,6 +201,7 @@
             shopBtn.hidden =NO;
             peopleBtn.hidden =YES;
             infoImageView.image =[UIImage imageNamed:[RKModels pathForImageWithFileName:@"shop"]];
+            infoText.text =@"车神集团旗下的电商品牌";
             break;
         case peopleType:
             newsBtn.hidden =YES;
@@ -207,6 +210,7 @@
             shopBtn.hidden =YES;
             peopleBtn.hidden =NO;
             infoImageView.image =[UIImage imageNamed:[RKModels pathForImageWithFileName:@"people"]];
+            infoText.text =@"车神集团会员尊贵服务专享";
             break;
             
         default:

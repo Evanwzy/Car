@@ -25,7 +25,7 @@ typedef enum{
     UIButton *shopBtn;
     UIButton *peopleBtn;
     UIImageView *infoImageView;
-    UILabel *infoLbl;
+    UITextView *infoText;
 }
 
 
@@ -35,6 +35,7 @@ typedef enum{
 @property (retain, nonatomic) IBOutlet UIButton *shopBtn;
 @property (retain, nonatomic) IBOutlet UIButton *peopleBtn;
 @property (retain, nonatomic) IBOutlet UIImageView *infoImageView;
-@property (retain, nonatomic) IBOutlet UILabel *infoLbl;
+@property (retain, nonatomic) IBOutlet UITextView *infoText;
+
 
 @end
